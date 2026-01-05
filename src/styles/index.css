@@ -1,11 +1,30 @@
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+
+
+
+/* Un fondo degradado suave para toda la página */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Efecto al pasar el mouse sobre una tarea */
+.task-item {
+    transition: all 0.2s ease;
+}
+
+.task-item:hover {
+    background-color: #f8f9fa; /* Gris muy clarito */
+    transform: scale(1.01); /* Se agranda un poquitito */
+}
+
+/* El ícono de basura solo se pone rojo al pasarle el mouse */
+.delete-icon {
+    color: #adb5bd; /* Gris por defecto */
+    transition: color 0.2s;
+}
+
+.task-item:hover .delete-icon {
+    color: #dc3545; /* Rojo al hacer hover en la tarea */
+}
